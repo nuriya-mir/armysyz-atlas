@@ -15,23 +15,25 @@ Every encounter begins with human curiosity and mutual respect among equals — 
 
 ## What Is Already Built vs. Open Development Roadmap
 
-### Already Live in Production (`https://armysyz.kz` & `./src`)
-1. **Language Encounters & 3D Globe:** 99 trilingual (`KK` / `RU` / `EN`) encounters between Kazakh and languages across all inhabited continents, plus the core Kazakh hub (*Qazaq tili*), with original scripts, acoustic transcripts, and one-voice-at-a-time playback.
-2. **Language Atlas — Step 1 (`src/build-atlas-data.mjs`, `src/atlas-curation.mjs`, `src/check-atlas.mjs`):**
-   - Equal-area **Equal Earth** projection (`d3-geo-projection`) on **Natural Earth** public-domain boundaries (UN-recognized borders, neutral styling for disputed regions) so continental and island regions are never visually distorted.
-   - Reproducible reconciliation of **Glottolog 5.3** (`CC BY 4.0`, genealogical trees, coordinates, ISO 639-3 / Glottocodes) and **Unicode CLDR 48** (`KK`/`RU`/`EN` localized names and endonyms) for the initial 100 languages.
-   - Strict **`no invented translation` build gate**: if a language or family name is unattested in `CLDR 48` or peer-reviewed linguistic dictionaries for `KK`/`RU`, the pipeline outputs its verified self-name (`autonym`) and international code rather than fabricating coinages.
-3. **"Бір сөз — көп тіл / One Word — Many Languages" — Part A (`src/words.ts`, `src/build-words-languages.mjs`):**
-   - Public chapter architecture and language registry (`~7,700` entries from Glottolog 5.3 + CLDR 48) for shared human concepts (*mother, water, sun, peace, conscience, greeting, road*), with strict ethical and acoustic rules:
-     - **Informed legal consent** (`CC0-1.0` or `CC-BY-4.0`) and contributor attribution;
-     - **Egalitarian voice cap:** up to **5 native voices per word per language** (maximum 2 per region) so major and endangered languages are heard on equal terms;
-     - **Transparency of voice origin:** any temporary synthetic audio is explicitly marked directly next to the recording (`§ 2`, `§ 4.7`).
+### 1. Already Live in Production (`https://armysyz.kz`)
+- **Language Encounters & 3D Globe (`https://armysyz.kz/en/`):** 99 trilingual (`KK` / `RU` / `EN`) encounters between Kazakh and languages across all inhabited continents, plus the core Kazakh hub (*Qazaq tili*), with original scripts, acoustic transcripts, and one-voice-at-a-time playback.
+- **Language Atlas — Step 1 (`https://armysyz.kz/en/atlas/` & `./src/build-atlas-data.mjs`):**
+  - Equal-area **Equal Earth** projection (`d3-geo-projection`) on **Natural Earth** public-domain boundaries (UN-recognized borders, neutral styling for disputed regions) so continental and island regions are never visually distorted.
+  - Reproducible reconciliation of **Glottolog 5.3** (`CC BY 4.0`, genealogical trees, coordinates, ISO 639-3 / Glottocodes) and **Unicode CLDR 48** (`KK`/`RU`/`EN` localized names and endonyms) for the initial 100 languages.
+  - Strict **`no invented translation` build gate**: if a language or family name is unattested in `CLDR 48` or peer-reviewed linguistic dictionaries for `KK`/`RU`, the pipeline outputs its verified self-name (`autonym`) and international code rather than fabricating coinages.
 
-### Planned Next Stage (NLnet Grant Scope)
+### 2. Already Built in Code (`./src/words.ts`, `./src/build-words-languages.mjs` — Staged for Public Release with Backend)
+- **"Бір сөз — көп тіл / One Word — Many Languages" — Part A (Client Architecture & Schema in `./src`):**
+  - Data schema, validation rules, and searchable language registry generator (`~6,917` spoken and `224` sign languages from Glottolog 5.3 + CLDR 48) for shared human words (*greeting, mother, thank you, water*), built and tested in code (waiting to be enabled on the live site once the server-side recording intake is deployed):
+    - **Informed legal consent** (`CC0-1.0`, `CC-BY-4.0`, or `CC-BY-NC-4.0`) and explicit AI-training opt-out by default;
+    - **Egalitarian voice cap:** 5 published native voices per word per language (maximum 2 from the same region, queue cap of 15 pending recordings) so major and endangered languages are heard on equal terms;
+    - **Dual native-speaker verification rule:** 2 independent native speakers + cited source.
+
+### 3. Planned Next Stage (Grant Scope)
 1. **Language Atlas — Step 2 (Full World Language Coverage):**
    - Scaling the Equal Earth interactive map and static build pipeline from 100 languages to all **~7,700 languages** in **Glottolog 5.3**, enriched with **Wikidata (`CC0`)** and **Unicode CLDR 48** endonyms, script metadata, and vital-status indicators, while keeping client bundle sizes compact and offline-capable.
-2. **"Бір сөз — көп тіл / One Word — Many Languages" — Part B (Open Living-Voice Intake & Verification Server):**
-   - Self-hostable, zero-telemetry browser recorder (`Web Audio API`, `Opus/WAV`) with cryptographic consent receipts (`CC0-1.0` / `CC-BY-4.0`), dialect/region tagging, and a **dual native-speaker verification queue** (`pending → verified → published`) that exports static frictionless Data Packages (`datapackage.json`) for Commons and open linguistic archives.
+2. **"Бір сөз — көп тіл / One Word — Many Languages" — Part B (Open Living-Voice Intake & Verification Server + Public Launch):**
+   - Self-hostable, zero-telemetry recording intake backend (`Web Audio API` / `Opus` / `WAV` / sign-language video) with informed consent receipts, dialect/region tagging, and a **dual native-speaker verification queue** (`pending → verified → published`) that deploys the chapter live on `armysyz.kz` and exports open packages for Wikimedia Commons / Lingua Libre and linguistic archives.
 
 ---
 
