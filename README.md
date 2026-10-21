@@ -55,7 +55,7 @@ Every encounter begins with human curiosity and mutual respect among equals — 
 In accordance with the **NLnet Foundation Generative AI Policy (v1.1, January 26, 2026)**:
 1. **Deterministic Pipeline:** All coordinate projections, Glottolog/CLDR joins, and integrity checks in this repository are **100% deterministic and reproducible**. No LLM is used to invent translations, endonyms, or linguistic classifications.
 2. **Honest Audio Labeling:** On `armysyz.kz`, priority is given to live human voices. Where synthetic voice is temporarily used, it is explicitly labeled next to the audio player.
-3. **Human Authorship:** Project architecture, curation rules, and code are authored by **Nuriya Mirsalimova** (Almaty, Kazakhstan).
+3. **Human Authorship:** Project architecture, curation rules, and code are authored by **Nuriya Mirsalimova** (Kazakhstan).
 
 ---
 
