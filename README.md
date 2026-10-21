@@ -33,8 +33,8 @@ Every encounter begins with human curiosity and mutual respect among equals — 
 
 ### 3. Open Technical & Documentation Tracks
 *(Note: Software engineering on `armysyz.kz` and community voice documentation for Wikimedia Commons operate as independent tracks with separate budgets and deliverables. Field recording and Wikimedia Commons / Wikidata / Wiktionary uploads do not depend on website backend development.)*
-1. **Wikimedia Open Audio & Lexicographical Documentation Track:**
-   - Studio and field recording of core comparative words and traditional greetings in Kazakh (`kaz`) and minority/neighboring languages spoken in Kazakhstan (`uig`, `dng`, `uzb`, `tat`), double-verified by 2 independent native speakers + dictionary source / linguist, mastered to `.ogg` / `.wav`, uploaded to **Wikimedia Commons / Lingua Libre** under `CC0 1.0` / `CC BY 4.0`, and linked to **Wikidata Lexeme Forms (`P443`)** and **Kazakh Wiktionary (`kk.wiktionary.org`)**.
+1. **Wikimedia Open Audio & Lexicographical Documentation Track (Phase 1 — Kazakh `kaz`, Uzbek `uzb` & Tatar `tat`):**
+   - Studio and field recording of 500 living voice recordings covering core comparative words and traditional greetings in **Kazakh (`kaz`)**, **Uzbek (`uzb`)**, and **Tatar (`tat`)** as the initial three languages of the series (before expanding to other languages in future phases), verified by 2 independent native speakers + cited academic dictionary source (`G21`), mastered to `.ogg` / `.wav`, uploaded to **Wikimedia Commons / Lingua Libre** under `CC0 1.0` / `CC BY 4.0`, and linked to **Wikidata Lexeme Forms (`P443`)** and **Kazakh Wiktionary (`kk.wiktionary.org`)**.
 2. **Open Software Engineering Roadmap (Independent of Wikimedia Content Grants):**
    - Scaling the Equal Earth static build pipeline from 100 languages to the full Glottolog 5.3 catalog (`~7,700` languages) and deploying the self-hosted web intake queue on `armysyz.kz`.
 
