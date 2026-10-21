@@ -22,18 +22,21 @@ Every encounter begins with human curiosity and mutual respect among equals — 
   - Reproducible reconciliation of **Glottolog 5.3** (`CC BY 4.0`, genealogical trees, coordinates, ISO 639-3 / Glottocodes) and **Unicode CLDR 48** (`KK`/`RU`/`EN` localized names and endonyms) for the initial 100 languages.
   - Strict **`no invented translation` build gate**: if a language or family name is unattested in `CLDR 48` or peer-reviewed linguistic dictionaries for `KK`/`RU`, the pipeline outputs its verified self-name (`autonym`) and international code rather than fabricating coinages.
 
-### 2. Already Built in Code (`./src/words.ts`, `./src/build-words-languages.mjs` — Staged for Public Release with Backend)
+### 2. Already Built in Code (`./src/words.ts`, `./src/build-words-languages.mjs`)
 - **"Бір сөз — көп тіл / One Word — Many Languages" — Part A (Client Architecture & Schema in `./src`):**
-  - Data schema, validation rules, and searchable language registry generator (`~6,917` spoken and `224` sign languages from Glottolog 5.3 + CLDR 48) for shared human words (*greeting, mother, thank you, water*), built and tested in code (waiting to be enabled on the live site once the server-side recording intake is deployed):
-    - **Informed legal consent** (`CC0-1.0`, `CC-BY-4.0`, or `CC-BY-NC-4.0`) and explicit AI-training opt-out by default;
-    - **Egalitarian voice cap:** 5 published native voices per word per language (maximum 2 from the same region, queue cap of 15 pending recordings) so major and endangered languages are heard on equal terms;
-    - **Dual native-speaker verification rule:** 2 independent native speakers + cited source.
+  - Data schema, validation rules, and searchable language registry generator (`~6,917` spoken and `224` sign languages from Glottolog 5.3 + CLDR 48) for shared human words (*greeting, mother, thank you, water*) and core comparative concepts across 12 human themes:
+    - **Verification rule (`G21`):** Every word, literal meaning, and greeting response is verified by **2 independent native speakers (not from the same family) + an attested dictionary/academic source with publication year** (with a specialist linguist arbitrating dialectal or orthographic questions; regional variants are preserved side by side rather than discarded);
+    - **Egalitarian voice cap (`G20`):** Up to 5 published native voices per word per language (maximum 2 from the same region/variety) so major and minority languages are heard on equal terms;
+    - **Licensing separation (`G12`):**
+      * **Wikimedia Commons / Lingua Libre / Wikidata Track:** All recordings produced under Wikimedia community documentation initiatives are released strictly under Wikimedia-compatible free licenses — **`CC0 1.0`** (for single words / Lingua Libre / Wikidata Lexeme forms) and **`CC BY 4.0`** (for multi-word greetings and phrases), with signed adult (`18+`) speaker consent and zero non-commercial (`NC`) restrictions.
+      * **Direct Web Submissions on `armysyz.kz`:** Individual visitors submitting directly through the website form may choose `CC0-1.0`, `CC-BY-4.0`, or `CC-BY-NC-4.0`; only `CC0-1.0` and `CC-BY-4.0` recordings are exported to Wikimedia Commons.
 
-### 3. Planned Next Stage (Grant Scope)
-1. **Language Atlas — Step 2 (Full World Language Coverage):**
-   - Scaling the Equal Earth interactive map and static build pipeline from 100 languages to all **~7,700 languages** in **Glottolog 5.3**, enriched with **Wikidata (`CC0`)** and **Unicode CLDR 48** endonyms, script metadata, and vital-status indicators, while keeping client bundle sizes compact and offline-capable.
-2. **"Бір сөз — көп тіл / One Word — Many Languages" — Part B (Open Living-Voice Intake & Verification Server + Public Launch):**
-   - Self-hostable, zero-telemetry recording intake backend (`Web Audio API` / `Opus` / `WAV` / sign-language video) with informed consent receipts, dialect/region tagging, and a **dual native-speaker verification queue** (`pending → verified → published`) that deploys the chapter live on `armysyz.kz` and exports open packages for Wikimedia Commons / Lingua Libre and linguistic archives.
+### 3. Open Technical & Documentation Tracks
+*(Note: Software engineering on `armysyz.kz` and community voice documentation for Wikimedia Commons operate as independent tracks with separate budgets and deliverables. Field recording and Wikimedia Commons / Wikidata / Wiktionary uploads do not depend on website backend development.)*
+1. **Wikimedia Open Audio & Lexicographical Documentation Track:**
+   - Studio and field recording of core comparative words and traditional greetings in Kazakh (`kaz`) and minority/neighboring languages spoken in Kazakhstan (`uig`, `dng`, `uzb`, `tat`), double-verified by 2 independent native speakers + dictionary source / linguist, mastered to `.ogg` / `.wav`, uploaded to **Wikimedia Commons / Lingua Libre** under `CC0 1.0` / `CC BY 4.0`, and linked to **Wikidata Lexeme Forms (`P443`)** and **Kazakh Wiktionary (`kk.wiktionary.org`)**.
+2. **Open Software Engineering Roadmap (Independent of Wikimedia Content Grants):**
+   - Scaling the Equal Earth static build pipeline from 100 languages to the full Glottolog 5.3 catalog (`~7,700` languages) and deploying the self-hosted web intake queue on `armysyz.kz`.
 
 ---
 
