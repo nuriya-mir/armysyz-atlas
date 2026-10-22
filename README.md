@@ -34,7 +34,7 @@ Every encounter begins with human curiosity and mutual respect among equals — 
 ### 3. Open Technical & Documentation Tracks
 *(Note: Software engineering on `armysyz.kz` and community voice documentation for Wikimedia Commons operate as independent tracks with separate budgets and deliverables. Field recording and Wikimedia Commons / Wikidata / Wiktionary uploads do not depend on website backend development.)*
 1. **Wikimedia Open Audio & Lexicographical Documentation Track (Phase 1 — Kazakh `kaz`, Uzbek `uzb` & Tatar `tat`):**
-   - Recording and verification of core everyday dictionary vocabulary and greetings in **Kazakh (`kaz`)**, **Uzbek (`uzb`)**, and **Tatar (`tat`)** as the initial three languages of the series, verified by independent native speakers + cited academic dictionary sources (`G21`), mastered to `.ogg` / `.wav`, uploaded to **Wikimedia Commons / Lingua Libre** under `CC0 1.0`, and linked to **Wikidata Lexeme Forms (`P443`)** and **Kazakh Wiktionary (`kk.wiktionary.org`)**.
+   - Studio and remote recording and philologist verification of **200 core everyday and culturally significant dictionary words and greetings** (**600 verified living voice recordings** across 3 native speakers per word) in **Kazakh (`kaz`)**, **Uzbek (`uzb`)**, and **Tatar (`tat`)** as the initial three languages of the series, verified by independent native speakers and philologists against cited academic dictionaries (`G21`), prepared in `.ogg` / `.wav`, uploaded to **Wikimedia Commons / Lingua Libre** under `CC0 1.0`, and linked to **Wikidata Lexeme Forms (`P443`, 300 forms)** and **Kazakh Wiktionary (`kk.wiktionary.org`, 200 entries)**.
 2. **Open Software Engineering Roadmap (Independent of Wikimedia Content Grants):**
    - Scaling the Equal Earth static build pipeline from 100 languages to the full Glottolog 5.3 catalog (`~7,700` languages) and deploying the self-hosted web intake queue on `armysyz.kz`.
 
@@ -50,12 +50,12 @@ Every encounter begins with human curiosity and mutual respect among equals — 
 
 ---
 
-## Generative AI & Data Provenance Declaration
+## Data Provenance & Generative AI Declaration
 
-In accordance with the **NLnet Foundation Generative AI Policy (v1.1, January 26, 2026)**:
-1. **Deterministic Pipeline:** All coordinate projections, Glottolog/CLDR joins, and integrity checks in this repository are **100% deterministic and reproducible**. No LLM is used to invent translations, endonyms, or linguistic classifications.
-2. **Honest Audio Labeling:** On `armysyz.kz`, priority is given to live human voices. Where synthetic voice is temporarily used, it is explicitly labeled next to the audio player.
-3. **Human Authorship:** Project architecture, curation rules, and code are authored by **Nuriya Mirsalimova** (Kazakhstan).
+1. **100% Human Voices on Wikimedia Commons:** All audio recordings produced for and uploaded to **Wikimedia Commons / Lingua Libre / Wikidata** are exclusively authentic recordings of real adult (`18+`) human native speakers with signed `CC0 1.0` informed consent. No synthetic or AI-generated audio is ever uploaded to Wikimedia projects.
+2. **Deterministic Pipeline:** All coordinate projections, Glottolog/CLDR joins, and integrity checks in this repository are **100% deterministic and reproducible** (in full compliance with open-source provenance standards and the NLnet Generative AI Policy v1.1). No LLM is used to invent translations, endonyms, or linguistic classifications.
+3. **Honest Audio Labeling on Web:** On `armysyz.kz`, priority is given to live human voices; where synthetic voice is temporarily used on the website prior to live recording, it is explicitly labeled next to the audio player.
+4. **Human Authorship:** Project architecture, curation rules, and code are authored by **Nuriya Mirsalimova** (Kazakhstan).
 
 ---
 
